@@ -7,6 +7,11 @@ html {
     overflow: hidden;
 }
 
+input {
+    margin: 0;
+    padding: 0;
+}
+
 /* 头 */
 header {
     width: 100%;
@@ -86,7 +91,50 @@ header .iconfont {
 /* 搜索框 */
 .search {
     width: 100%;
+    padding: calc(15rem / 37.5) calc(10rem / 37.5);
+    box-sizing: border-box;
 }
+
+.search-box {
+    width: 100%;
+    position: relative;
+}
+
+.search-box-left-input {
+    width: 100%;
+    height: calc(30rem / 37.5);
+    font-size: calc(14rem / 37.5);
+    border: calc(1rem / 37.5) solid #ebecec;
+    border-radius: calc(30rem / 37.5);
+    background-color: #ebecec;
+    padding: 0 calc(30rem / 37.5);
+    box-sizing: border-box;
+}
+
+.search-box-right-input {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: calc(30rem / 37.5);
+    height: calc(30rem / 37.5);
+    border: 0;
+    background-color: #ebecec;
+    border-radius: calc(30rem / 37.5);
+}
+
+.search-box-font-left {
+    position: absolute;
+    top: calc(5rem / 37.5);
+    left: calc(10rem / 37.5);
+
+}
+
+.search-box-font-right {
+    position: absolute;
+}
+
+
+
 
 
 /* 热门搜索 */
@@ -111,4 +159,9 @@ header .iconfont {
     line-height: calc(32rem / 37.5);
     color: #333;
     padding: 0 calc(14rem / 37.5);
+    border: calc(1rem / 37.5) solid #e7e8eb;
+    border-radius: calc(32rem / 37.5);
+    margin-right: calc(8rem / 37.5);
+    margin-bottom: calc(8rem / 37.5);
+    font-size: calc(14rem / 37.5);
 }
