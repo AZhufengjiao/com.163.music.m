@@ -3,13 +3,16 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
     overflow: hidden;
 }
 
 input {
     margin: 0;
     padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 /* 头 */
@@ -60,7 +63,6 @@ header .iconfont {
     width: 100%;
     display: flex;
     height: calc(40rem / 37.5);
-    border-bottom: calc(1rem / 37.5) solid #ccc;
     overflow: hidden;
 }
 
@@ -92,6 +94,8 @@ header .iconfont {
 .search {
     width: 100%;
     padding: calc(15rem / 37.5) calc(10rem / 37.5);
+    border-bottom: calc(1rem / 37.5) solid #eee;
+    border-top: calc(1rem / 37.5) solid #eee;
     box-sizing: border-box;
 }
 
@@ -157,11 +161,18 @@ header .iconfont {
     display: inline-block;
     height: calc(32rem / 37.5);
     line-height: calc(32rem / 37.5);
-    color: #333;
-    padding: 0 calc(14rem / 37.5);
+    /* padding: 0 calc(14rem / 37.5); */
     border: calc(1rem / 37.5) solid #e7e8eb;
     border-radius: calc(32rem / 37.5);
     margin-right: calc(8rem / 37.5);
     margin-bottom: calc(8rem / 37.5);
     font-size: calc(14rem / 37.5);
+}
+
+.hot-search-bottom li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #333;
+    padding: 0 calc(14rem / 37.5);
 }
